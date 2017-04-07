@@ -7,7 +7,7 @@ import com.finra.upload.entity.FileInfo;
 
 public interface FileInfoServiceInterface {
 
-	String addFile(Integer id, String name, Long size, Date date, String path, String author);
+	void addFile(Integer id, String name, Long size, Date date, String path, String author);
 
 	List<FileInfo> getFileInfoList();
 

@@ -19,10 +19,9 @@ public class FileInfoService implements FileInfoServiceInterface {
 	
 	@Override
 	@Transactional
-	public String addFile(Integer id, String name, Long size, Date date, String path, String author) {	
+	public void addFile(Integer id, String name, Long size, Date date, String path, String author) {	
 		FileInfo fileInfo = new FileInfo(id, name, size, date, path, author);	
-		fileInfoDAO.save(fileInfo);	
-		return "Succeed to Save File Info";
+		fileInfoDAO.save(fileInfo);
 	}
 	
 	@Override

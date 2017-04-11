@@ -49,8 +49,6 @@ public class FINRAtestApplicationTests {
 	
 	private Date date = new Date(longDate);
 	
-
-	
 	@Before
 	public void setup() {
 		MockitoAnnotations.initMocks(this);
